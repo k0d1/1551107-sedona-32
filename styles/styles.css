@@ -1,0 +1,321 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(font/ptsans-400.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(fonts/ptsans-700.woff2) format("woff2");
+}
+
+.page-header {
+    background-color: #ffffff;
+}
+
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}  
+
+.logo-header {
+    background-position: right bottom;
+}
+
+.link {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 1px;
+    border-radius: 4px;
+    background-color: #756257;
+}
+
+.main-image-welcome {
+    background-image: url(/image/index-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.main-text-bold {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-text-norm {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.blue-box   {
+    background-color: #83B3D3;
+}
+
+.box-list {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.box-item {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.grey {
+    background-color: #f0f6fa;
+}
+
+.main-search {
+    background-color: #ffffff;
+}
+
+.main-search-title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;  
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-search-item {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.button-search{
+    color: #ffffff;
+    border: 1px;
+    background: #756257;
+    border-radius: 10px;
+}
+
+.main-subscribe {
+    background-image: url(/image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.main-subscribe-button {
+    background-color: #83B3D3;
+    border: 1px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.main-subcribe-title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-subcribe-item {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.twitter {
+    background-image: url(/image/social-twitter.svg);
+    background-repeat: no-repeat;
+}
+
+.facebook {
+    background-image: url(/image/social-facebook.svg);
+    background-repeat: no-repeat;
+}
+
+.youtube {
+    background-image: url(/image/social-youtube.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-phone {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.html {
+    background-image: url(/image/html-academy.svg);
+    background-repeat: no-repeat;
+}
+
+.inner-catalog {
+    background-image: url(/image/catalog/catalog-background\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.main-inner-title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+
+.breadcrumbs-item {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.catalog-filter-input {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.catalog-filter--title {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.inner-find-title {
+    font-family: PT Sans;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+text-transform: uppercase
+}
+
+.inner-select {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.find-list-name {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.find-list-type {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.find-list-price {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.button-details {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #756257;
+    color: #ffffff;
+    border: 1px #756257;
+    border-radius: 4px;
+}
+
+.color-blue {
+    background-color: #83B3D3;
+}
+
+.color-green {
+    background-color: #7DB54F;
+}
+
+.load-more {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #83B3D3;
+    border: 1px #83B3D3;
+    color: #ffffff;
+}
+
+.count-text {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.count-amount {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+
+}
