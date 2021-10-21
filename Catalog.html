@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
-  </head>
-  <body>
-<header class="page-header">
-  <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Главная</a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">О Седоне</a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">Гостиницы</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="navigation-user">
-    <a class="search" href="#">
-      <span class="visually-hidden navigation-icon">
-        Поиск
-      </span>
-    </a>
-    <a class="favorites" href="#">
-      <span class="visually-hidden navigation-icon">
-        Избранное
-      </span>
-    </a>
-    <a class="link" href="#">
-      Хочу сюда!
-    </a>
-  </div>
-</header>
-  <main class="main-inner">
-    <section class="inner-catalog">
-      <h1 class="main-inner-title">Гостиницы Седоны</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-list">
-          <a class="image-breadcrumbs" href="#">
-            <span class="visually-hidden">Иконка дома</span>
-          </a>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Главная</a>
         </li>
-        <li class="breadcrumbs-list">
-          <a class="breadcrumbs-item" href="#">Гостиницы</a>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Гостиницы</a>
         </li>
       </ul>
+    </nav>
+    <img class="logo-header" src="/image/logo-header.svg" alt="Логотип">
+    <div class="navigation-user">
+      <a class="search" href="#">
+        <span class="visually-hidden navigation-icon">
+          Поиск
+        </span>
+      </a>
+      <a class="favorites" href="#">
+        <span class="visually-hidden navigation-icon">
+          Избранное
+        </span>
+      </a>
+      <a class="link" href="#">
+        Хочу сюда!
+      </a>
+    </div>
+  </header>
+  <main class="main-inner">
+    <section class="inner-catalog">
+      <div class="main-inner-container">
+        <h1 class="main-inner-title">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-list">
+            <a class="image-breadcrumbs" href="#">
+              <span class="visually-hidden">Иконка дома</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-list">
+            <a class="breadcrumbs-item" href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </div>
       <form action="https://echo.htmlacademy.ru/">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter--title">Инфраструктура:</legend>
@@ -90,32 +95,31 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Применить</button>
-        <button type="reset">Сбросить</button>
       </form>
-      
     </section>
     <section class="inner-find">
-      <h2 class="inner-find-title">Найдено гостиниц: 38</h2>
-      <p class="inner-select">Сначала дешевые</p>
-      <ul class="type-visualy">
-        <li class="type-visualy-1">
-          <span class="visually-hidden">Иконка внешнего вида</span>
-          <button class="type-button" type="button"></button>
-        </li>
-        <li class="type-visualy-2">
-          <span class="visually-hidden">Иконка внешнего вида</span>
-          <button class="type-button" type="button"></button>
-        </li>
-        <li class="type-visualy-3">
-          <span class="visually-hidden">Иконка внешнего вида</span>
-          <button class="type-button" type="button"></button>
-        </li>
-      </ul>
+      <div class="inner-find-container">
+        <h2 class="inner-find-title">Найдено гостиниц: 38</h2>
+        <p class="inner-select">Сначала дешевые</p>
+        <ul class="type-visualy">
+          <li class="type-visualy-1">
+            <span class="visually-hidden">Иконка внешнего вида</span>
+            <button class="type-button" type="button"></button>
+          </li>
+          <li class="type-visualy-2">
+            <span class="visually-hidden">Иконка внешнего вида</span>
+            <button class="type-button" type="button"></button>
+          </li>
+          <li class="type-visualy-3">
+            <span class="visually-hidden">Иконка внешнего вида</span>
+            <button class="type-button" type="button"></button>
+          </li>
+        </ul>
+      </div>
       <ul class="find-list">
         <li class="find-list-item">
           <div class="find-list-image">
-            <img src="image/catalog/hotel-1.jpg" width="180px" height="120px" alt="Гостиница Amara Resort & Spa">
+            <img src="image/catalog/hotel-1.jpg" width="180" height="120" alt="Гостиница Amara Resort & Spa">
           </div>
           <div class="find-list-description">
             <h3 class="find-list-name">Amara Resort & Spa</h3>
@@ -134,7 +138,7 @@
         </li>
         <li class="find-list-item">
           <div class="find-list-image">
-            <img src="image/catalog/hotel-2.jpg" width="180px" height="120px" alt="Мотель Desert Quail Inn">
+            <img src="image/catalog/hotel-2.jpg" width="180" height="120" alt="Мотель Desert Quail Inn">
           </div>
           <div class="find-list-description">
             <h3 class="find-list-name">Desert Quail Inn</h3>
@@ -152,7 +156,7 @@
         </li>
         <li class="find-list-item">
           <div class="find-list-image">
-            <img src="image/catalog/hotel-3.jpg" width="180px" height="120px" alt="Апартаменты Villas at Poco Diablo">
+            <img src="image/catalog/hotel-3.jpg" width="180" height="120" alt="Апартаменты Villas at Poco Diablo">
           </div>
           <div class="find-list-description">
             <h3 class="find-list-name">Villas at Poco Diablo</h3>
@@ -169,7 +173,7 @@
         </li>
         <li class="find-list-item">
           <div class="find-list-image">
-            <img src="image/catalog/hotel-4.jpg" width="180px" height="120px" alt="GreenTree Inn">
+            <img src="image/catalog/hotel-4.jpg" width="180" height="120" alt="GreenTree Inn">
           </div>
           <div class="find-list-description">
             <h3 class="find-list-name">GreenTree Inn</h3>
@@ -186,10 +190,12 @@
         </li>
       </ul>
       <a href="#" class="load-more">Загрузить еще</a>
+    </section>
+    <section class="pagination-container">
       <ul class="pagination">
         <li class="pagination-list">
           <div class="pagination-pages">
-            <ul class="pages list">
+            <ul class="pages-list">
               <li class="pagination-item pages-item-grey">
                 <p>1</p>
               </li>
@@ -217,20 +223,19 @@
         </li>
       </ul>
     </section>
-    <section class="main-subscribe">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама,<br>
+    <section class="inner-subscribe">
+      <h2 class="main-subcribe-title">Подпишитесь на рассылку</h2>
+      <p class="main-subcribe-item">Только полезная информация и никакого спама,<br>
         честное бойскаутское!</p>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" name="email" placeholder="Ваш e-mail">
-        <button type="submit">Подписаться</button>
+      <form class="main-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <input class="main-subscribe-item color-input" type="email" name="email" placeholder="Ваш e-mail">
+        <button class="main-subscribe-button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
   <footer class="page-footer">
     <section class="footer-contacts">
-      <h3 class="visually-hidden">Инконки </h3>
-      <ul>
+      <ul class="footer-social">
         <li class="footer-icon">
           <span class="visually-hidden twitter">Иконка Твитера</span>
         </li>
@@ -242,10 +247,11 @@
         </li>
       </ul>
       <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="https://echo.htmlacademy.ru/">
-        <span class="visually-hidden ">Ссылка на html.academy</span>
+      <a class="footer-email" href="https://echo.htmlacademy.ru/">
+        <span class="visually-hidden html">Ссылка на html.academy</span>
       </a>
     </section>
   </footer>
 </body>
+
 </html>
