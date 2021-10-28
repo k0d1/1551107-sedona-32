@@ -54,7 +54,7 @@
           </li>
         </ul>
       </div>
-      <form action="https://echo.htmlacademy.ru/">
+      <form class="inner-filter-form" action="https://echo.htmlacademy.ru/">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter--title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -95,6 +95,25 @@
             </li>
           </ul>
         </fieldset>
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Стоимость,₽:</legend>
+          <button class="range-toggle toggle-min" type="button">
+            <span class="visually-hidden">Изменить минимальную цену.</span>
+          </button>
+          <button class="range-toggle toggle-max" type="button">
+            <span class="visually-hidden">Изменить максимальную цену.</span>
+          </button>
+          <label class="catalog-filter-label">
+            от <input class="catalog-filter-input" type="number" name="min-price"> ₽
+          </label>
+          <label class="catalog-filter-label">
+            до <input class="catalog-filter-input" type="number" name="max-price"> ₽
+          </label>
+        </fieldset>
+        <div class="catalog-filter-button">
+          <button class="button-accept" type="button">Применить</button>
+          <button class="button-cancel" type="button">Сбросить</button>
+        </div>
       </form>
     </section>
     <section class="inner-find">
@@ -147,7 +166,7 @@
             <a class="button-details" href="#">подробнее</a>
             <a class="button-details color-blue" href="#">В избранное</a>
           </div>
-          <div>
+          <div class="find-list-star">
             <span class="image-star visually-hidden">звезда</span>
             <span class="image-star visually-hidden">звезда</span>
             <span class="image-star visually-hidden">звезда</span>
@@ -165,7 +184,7 @@
             <a class="button-details" href="#">подробнее</a>
             <a class="button-details color-green" href="#">В избранном</a>
           </div>
-          <div>
+          <div class="find-list-star">
             <span class="image-star visually-hidden">звезда</span>
             <span class="image-star visually-hidden">звезда</span>
             <p>Рейтинг: 9,2</p>
@@ -182,7 +201,7 @@
             <a class="button-details" href="#">подробнее</a>
             <a class="button-details color-blue" href="#">В избранное</a>
           </div>
-          <div>
+          <div class="find-list-star">
             <span class="image-star visually-hidden">звезда</span>
             <span class="image-star visually-hidden">звезда</span>
             <p>Рейтинг: 9,2</p>
@@ -192,36 +211,32 @@
       <a href="#" class="load-more">Загрузить еще</a>
     </section>
     <section class="pagination-container">
-      <ul class="pagination">
-        <li class="pagination-list">
-          <div class="pagination-pages">
-            <ul class="pages-list">
-              <li class="pagination-item pages-item-grey">
-                <p>1</p>
-              </li>
-              <li class="pagination-item">
-                <p>2</p>
-              </li>
-              <li class="pagination-item">
-                <p>3</p>
-              </li>
-              <li class="pagination-item">
-                <p>4</p>
-              </li>
-              <li class="pagination-item">
-                <p>...</p>
-              </li>
-              <li class="pagination-item">
-                <p>10</p>
-              </li>
-            </ul>
-          </div>
-          <div class="count-item">
-            <p class="count-text">Гостиниц на странице:</p>
-            <p class="count-amount">4</p>
-          </div>
-        </li>
-      </ul>
+      <div class="pagination">
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-link one" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link ten" href="#">10</a>
+          </li>
+        </ul>
+        <div class="count-item">
+          <p class="count-text">Гостиниц на странице:</p>
+          <p class="count-amount">4</p>
+        </div>
+      </div>
     </section>
     <section class="inner-subscribe">
       <h2 class="main-subcribe-title">Подпишитесь на рассылку</h2>
