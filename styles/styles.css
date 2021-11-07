@@ -16,6 +16,11 @@
 
 html {
     height: 100%;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
 }
 
 body {
@@ -111,14 +116,34 @@ body {
     padding-bottom: 51px;
 }
 
-.foto-house {
-    background-image: url(/image/photo-1.jpg);
+.blue-box:before {
     background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: cover;
+    content: "";
+    display: block;
+    width: 800px;
+    height: 100%; 
+    position: absolute;
+    top: 0;
 }
 
-.foto-nature {
-    background-image: url(/image/photo-2.jpg);
-    background-repeat: no-repeat;
+.foto-house:before {
+    background-image: url("/image/photo-1.jpg");
+    left: 100%;
+}  
+
+.foto-nature:before {
+    background-image: url("/image/photo-2.jpg");
+    right: 100%;
+}
+
+.advantage-item-flex-end {
+    justify-content: end;
+}
+
+.image-advantage {
+    margin-bottom: 23px;
 }
 
 .advantage-item {
@@ -137,11 +162,15 @@ body {
     margin: 0;
     background: #ffffff;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 .advantage-list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
 }
 
 .advantage-sub-item {
@@ -149,10 +178,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.image-advantage {
-    padding-top: 89px;
+    padding: 89px 75px;
+    flex-basis: calc(100% / 3);
 }
 
 .main-text-bold {
@@ -178,6 +205,13 @@ body {
 .blue-box   {
     background-color: #83B3D3;
     color: #ffffff;
+    padding-top: 98px;
+    padding-bottom: 88px;
+    padding-right: 90px;
+    padding-left: 90px;
+    box-sizing: border-box;
+    max-width: 400px;
+    position: relative;
 }
 
 .box-list {
@@ -186,10 +220,9 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    padding-top: 98px;
-    padding-bottom: 76px;
-
 }
 .box-item {
     font-family: "PT Sans", Arial, Helvetica, sans-serif;
@@ -197,11 +230,15 @@ body {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    padding-bottom: 77px;
+    margin: 0; 
 }
 
 .grey {
     background-color: #f0f6fa;
+}
+
+.broun {
+    background-color: #83b3d333;
 }
 
 .main-search {
@@ -357,8 +394,12 @@ body {
 }
 
 .inner-find {
-    min-width: 1056px;
+    max-width: 1056px;
     padding-top: 44px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .inner-find-container {
@@ -366,11 +407,13 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
-    max-width: 1056px;
+    width: 100%;
 }
 
 .type-visualy {
     display: flex;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -428,26 +471,43 @@ body {
 }
 
 .find-list {
-    display: flex;
-    flex-direction: column;
     max-width: 1056px;
     margin: 0 auto;
-    justify-content: space-between;
-}
-
-.find-list-image {
-    margin-right: 37px;
+    padding: 0;
+    margin: 0;
 }
 
 .find-list-star {
-    margin-left: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.find-list-image-grid {
+    display: block;
+}
+
+.find-list-description {
+    grid-column: span 3;
+    display: grid;
+    column-gap: 8px;
+    grid-template-columns: 151px 151px 1fr;
+
+}
+
+.bottom-line {
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 30px;
 }
 
 .find-list-item {
-    display: flex;
-    width: 1060px;
+    display: grid;
     margin: 0 auto;
-    justify-content: space-between;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    padding-top: 30px; 
+    margin-bottom: 30px;
+    border-top: 1px solid #E6E6E6;
 }
 
 .find-list-name {
@@ -456,6 +516,9 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-column: span 3;
 }
 
 .find-list-type {
@@ -464,6 +527,9 @@ body {
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 31px;
+    grid-column: 1 / 2;
 }
 
 .find-list-price {
@@ -472,6 +538,25 @@ body {
     font-weight: normal;
     font-size: 18px;
     line-height: 23px;
+    grid-column: 2 / 3;
+}
+
+.find-list-rating {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    padding: 8px 30px;
+    margin: 0;
+    align-self: end;
+    justify-self: end;
+    display: inline-block;
 }
 
 .button-details {
@@ -479,15 +564,15 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 21px;
     text-align: center;
     text-transform: uppercase;
     background-color: #756257;
     color: #ffffff;
     border-radius: 4px;
-    padding: 8px 30px;
+    padding: 8px 20px;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    grid-column: 1 / 2;
 }
 
 .inner-filter-form {
@@ -516,7 +601,7 @@ body {
 }
 
 .button-cancel {
-    background-color: #808080;
+    background-color: transparent;
     border: none;
     padding: 14px 34px;
     border-radius: 4px;
@@ -532,10 +617,12 @@ body {
 
 .color-blue {
     background-color: #83B3D3;
+    grid-column: 2 / 3;
 }
 
 .color-green {
     background-color: #7DB54F;
+    grid-column: 2 / 3;
 }
 
 .load-more {
@@ -550,10 +637,9 @@ body {
     color: #ffffff;
     padding: 14px 240px;
     text-decoration: none;
-    margin: 0 auto;
     display: inline-block;
     justify-self: center;
-    align-self: center;
+    margin-bottom: 30px;
 }
 
 .count-text {
@@ -590,10 +676,24 @@ body {
     display: flex;
 }
 
-.pagination-container {
-    padding-top: 61px;
-    width: 1056px;
+.count-text {
+    margin-right: 68px;
+}
+
+.count-amount {
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 17px 133px 12px 12px;
+    border: 2px solid #E6E6E6;
     margin: 0;
+    
+}
+
+.pagination-container {
+    margin: 0 auto;
+    padding-top: 17px;
+    border-top: 1px solid #E6E6E6;
+    max-width: 1056px;
 }
 
 .pagination-link {
