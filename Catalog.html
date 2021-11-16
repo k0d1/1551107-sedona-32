@@ -57,7 +57,7 @@
           <li class="breadcrumbs-list">
             <a class="image-breadcrumbs" href="#">
               <span class="visually-hidden">Иконка дома</span>
-              <img src="/image/catalog/home1.svg" alt="Домашняя страница" height="12" width="12">
+              <img src="/image/catalog/home1.svg" class="house-inner" alt="Домашняя страница" height="12" width="12">
             </a>
           </li>
           <li class="breadcrumbs-list">
@@ -71,55 +71,76 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="catalog-filter-input" type="checkbox" name="pool" checked> Басейн
+                <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Басейн</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="catalog-filter-input" type="checkbox" name="parking" checked>Парковка
+                <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Парковка</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="catalog-filter-input" type="checkbox" name="wifi">Wi-Fi
+                <input class="control-input visually-hidden" type="checkbox" name="wifi">
+                <span class="control-mark"></span>
+                <span class="control-label">Wi-Fi</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter--title">Тип жилья:</legend>
+          <legend class="catalog-filter-title">Тип жилья:</legend>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="catalog-filter-input" type="radio" name="hostel" checked>Гостиница
+                <input class="control-input visually-hidden" type="radio" name="hostel" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гостиница</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="catalog-filter-input" type="radio" name="motel">Мотель
+                <input class="control-input visually-hidden" type="radio" name="motel">
+                <span class="control-mark"></span>
+                <span class="control-label">Мотель</span>
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="catalog-filter-input" type="radio" name="Apartments">Апартаменты
+                <input class="control-input visually-hidden" type="radio" name="Apartments">
+                <span class="control-mark"></span>
+                <span class="control-label">Апартаменты</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="catalog-filter-group catalog-filter-group-margin">
-          <legend class="catalog-filter-title">Стоимость,₽:</legend>
-          <button class="range-toggle toggle-min" type="button">
-            <span class="visually-hidden">Изменить минимальную цену.</span>
-          </button>
-          <button class="range-toggle toggle-max" type="button">
-            <span class="visually-hidden">Изменить максимальную цену.</span>
-          </button>
-          <label class="catalog-filter-label">
-            от <input class="catalog-filter-input" type="number" name="min-price"> ₽
-          </label>
-          <label class="catalog-filter-label">
-            до <input class="catalog-filter-input" type="number" name="max-price"> ₽
-          </label>
+        <fieldset class="catalog-filter-group filter-form-price">
+          <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+          <div class="range-wrapper-inputs">
+            <label class="catalog-filter-label border-left">
+              <input class="range-input" type="number" value="0" name="min-price">от
+            </label>
+            <label class="catalog-filter-label border-right">
+              <input class="range-input" type="number" value="9000" name="max-price" style="width: 37px">до
+            </label>
+          </div>
+          </div>
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="right: 60px; width: 227px">
+                <button class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </fieldset>
         <div class="catalog-filter-button">
           <button class="button-accept" type="submit">Применить</button>
@@ -275,7 +296,7 @@
     </section>
     <section class="inner-subscribe">
       <h2 class="main-subcribe-title">Подпишитесь на рассылку</h2>
-      <p class="main-subcribe-item">Только полезная информация и никакого спама,<br>
+      <p class="main-subcribe-item-text">Только полезная информация и никакого спама,<br>
         честное бойскаутское!</p>
       <form class="main-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="main-subscribe-item color-input" type="email" name="email" placeholder="Ваш e-mail">
