@@ -496,7 +496,7 @@ h2.box-list-counter::after {
 
 
 .button-search:hover {
-  background-color: #615048
+  background-color: #615048;
 }
 
 .button-search:active {
@@ -511,6 +511,7 @@ h2.box-list-counter::after {
 .main-subscribe {
   background-image: url("/image/background.jpg");
   background-repeat: no-repeat;
+  background-color: #615048;
   background-size: cover;
   color: #ffffff;
   padding-top: 92px;
@@ -518,7 +519,7 @@ h2.box-list-counter::after {
 }
 
 .main-subscribe-form {
-  position: relative;
+  display: flex;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -529,7 +530,7 @@ h2.box-list-counter::after {
   padding: 15px 200px 15px 22px;
   margin: 0;
   border: 2px solid transparent;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -565,12 +566,9 @@ h2.box-list-counter::after {
 .main-subscribe-button {
   background-color: #83B3D3;
   border-radius: 0px 10px 10px 0px;
-  padding: 0 34px;
+  padding: 17px 34px;
   height: 100%;
   border: none;
-  position: absolute;
-  right: 0;
-  top: 0;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -653,6 +651,7 @@ h2.box-list-counter::after {
   border-radius: 10px;
   padding: 15px;
   outline: none;
+  margin-left: 226px;
 }
 
 .footer-phone:hover {
@@ -680,7 +679,6 @@ h2.box-list-counter::after {
 
 .footer-contacts {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -721,7 +719,7 @@ h2.box-list-counter::after {
   display: flex;
   margin: 0;
   padding: 0;
-  align-items: center;
+  margin-left: 61px;
 }
 
 .footer-icon {
@@ -908,6 +906,12 @@ h2.box-list-counter::after {
   margin-left: auto;
 }
 
+.select-number-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .select-control {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -925,6 +929,25 @@ h2.box-list-counter::after {
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
+}
+
+.select-number{
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  width: 100%;
+  padding: 11px 14px;
+  background-image: url("/image/catalog/dropdown.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+  border: 2px solid #E6E6E6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  width: 160px;
 }
 
 .breadcrumbs-item {
@@ -1286,6 +1309,7 @@ h2.box-list-counter::after {
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
+  margin-right: 52px;
 }
 
 .count-amount {
@@ -1302,11 +1326,11 @@ h2.box-list-counter::after {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-right: auto;
 }
 
 .pagination {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
@@ -1316,7 +1340,7 @@ h2.box-list-counter::after {
 }
 
 .count-text {
-  margin-right: 68px;
+  
 }
 
 .count-amount {
@@ -1452,8 +1476,8 @@ h2.box-list-counter::after {
 .footer-email {
   border: 3px solid transparent;
   border-radius: 10px;
-  padding: 10px;
   outline: none;
+  margin-left: 228px;
 }
 
 .html-academy:hover {
@@ -1996,6 +2020,10 @@ padding-bottom: 64px;
   color: #FF5757;
   bottom: -31px;
   left: 27%;
+}
+
+.black-border {
+  border-color: #000000;
 }
 
 .approval {
